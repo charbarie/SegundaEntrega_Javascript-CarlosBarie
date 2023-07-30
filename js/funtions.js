@@ -122,7 +122,16 @@ function error (){
     alert("Favor de ingresar una opcion correcta");
     return choice =showMenu();
 };
-    
+
+function Movimiento(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.saludar = function() {
+      console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+    };
+}
 
 
 
+
+  
