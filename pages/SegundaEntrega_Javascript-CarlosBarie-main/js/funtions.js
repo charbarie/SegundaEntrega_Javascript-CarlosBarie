@@ -2,7 +2,11 @@
 function login(){// validacion de 3 intentos 
     let userIncome;
     let passwordIncome;
-    for(let i=0;i<3;i++){ 
+    userIncome = document.getElementById('InputEmail');
+    passwordIncome = document.getElementById('InputPassword');
+    console.log(userIncome);
+    console.log(passwordIncome);
+/*     for(let i=0;i<3;i++){ 
         userIncome=prompt("Ingrese Usuario");
         passwordIncome=prompt("Ingrese Clave");
         for( const item of Usuarios){
@@ -15,7 +19,7 @@ function login(){// validacion de 3 intentos
             return false;
         }; 
     };
-};
+}; */
 };
 function showMenu(){// muestra opciones de menu
     selection=prompt("Menu principal seleccione una opcion:\n 1-Saldos\n 2-Extracciones\n 3-Depósitos\n 4-Cambio de clave \n 5-Salir" );
@@ -123,7 +127,13 @@ function error (){
     return choice =showMenu();
 };
 
-
+function Movimiento(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+    this.saludar = function() {
+      console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+    };
+}
 
 
 
