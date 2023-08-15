@@ -5,7 +5,7 @@ let option;
 let validation = false;
 let ActiveUSer = {};
 ActiveUSer = login();
-console.log(ActiveUSer);
+console.log(ActiveUSer);/* 
  if(ActiveUSer !=false){
     choice= showMenu();
     while(choice != 5 && validation === true){
@@ -29,4 +29,4 @@ console.log(ActiveUSer);
         };
     };
 };
-alert("Gracias por utilizar el servicio");
+alert("Gracias por utilizar el servicio"); */

@@ -1,8 +1,9 @@
 
 function login(){// validacion de 3 intentos 
-    let userIncome;
-    let passwordIncome;
-    for(let i=0;i<3;i++){ 
+    let userIncome =document.getElementById('InputEmail');
+    let passwordIncome = document.getElementById('InputPassword');
+    
+/*     for(let i=0;i<3;i++){ 
         userIncome=prompt("Ingrese Usuario");
         passwordIncome=prompt("Ingrese Clave");
         for( const item of Usuarios){
@@ -15,7 +16,7 @@ function login(){// validacion de 3 intentos
             return false;
         }; 
     };
-};
+}; */
 };
 function showMenu(){// muestra opciones de menu
     selection=prompt("Menu principal seleccione una opcion:\n 1-Saldos\n 2-Extracciones\n 3-Depósitos\n 4-Cambio de clave \n 5-Salir" );
